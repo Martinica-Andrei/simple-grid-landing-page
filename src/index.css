@@ -81,7 +81,7 @@ button:hover {
 /* Header
 --------------------------------------------------------------------------- */
 
-header {
+.main-header {
     z-index: 999;
     position: sticky;
     top: 0;
@@ -93,7 +93,7 @@ header {
     background-image: var(--body-background);
 }
 
-header p::before {
+.main-header p::before {
     content: "";
     display: inline-block;
     width: 10px;
@@ -106,7 +106,7 @@ header p::before {
 /* Menu
 --------------------------------------------------------------------------- */
 
-#menu {
+.menu {
     position: fixed;
     z-index: 998;
     border: 0;
@@ -144,7 +144,7 @@ header p::before {
     border-bottom: 3px solid black;
 }
 
-#menu .background {
+.menu .background {
     position: absolute;
     z-index: 998;
     width: 100%;
@@ -218,7 +218,7 @@ footer {
             "footer footer footer";
     }
 
-    #header {
+    .main-header {
         grid-area: header;
     }
 
@@ -256,7 +256,7 @@ footer {
         font-weight: bold;
     }
 
-    #menu {
+    .menu {
         position: relative;
         top:0;
         grid-row: 2 / -1;
@@ -274,7 +274,7 @@ footer {
         align-items: end;
     }
 
-    #menu .background {
+    .menu .background {
         position: absolute;
         z-index: 998;
         width: 100vw;
