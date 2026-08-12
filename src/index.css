@@ -103,7 +103,7 @@ header p::before {
     background: var(--body-background);
     width: 100%;
     position: absolute;
-    top:100%;
+    top: 100%;
 }
 
 .menu-content {
@@ -195,24 +195,43 @@ footer {
 --------------------------------------------------------------------------- */
 
 @media screen and (min-width:800px) {
-    main {
+    body {
         display: grid;
         grid-template-columns: 1.5fr 1fr 1fr;
-        grid-template-rows: repeat(2, 1fr);
+        grid-template-rows: 1fr 3fr 3fr 1fr;
+        grid-template-areas:
+            "header header header"
+            "hero stat1 stat2"
+            "hero stat3 stat4"
+            "footer footer footer"
+        ;
     }
 
-    .hero {
-        grid-row: 1 / 3;
-        display:flex;
-        align-items: center;
-    }
-
+    main,
     .statistics,
     .statistics ul {
         display: contents;
     }
 
-    .statistics li{
+    #header {
+        grid-area: header;
+    }
+
+    .hero {
+        grid-area: hero;
+        display: flex;
+        align-items: center;
+    }
+
+    .statistics li {
         border-left: var(--border);
+    }
+
+    footer {
+        grid-area: footer;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-weight: bold;
     }
 }
