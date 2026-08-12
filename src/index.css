@@ -6,7 +6,7 @@
     --Blue-400: hsl(220, 100%, 64%);
     --Blue-600: hsl(228, 100%, 60%);
     --Blue-700: hsl(228, 99%, 58%);
-    --body-background: linear-gradient(to bottom, var(--Blue-600), var(--Blue-700));
+    --body-background: linear-gradient(45deg, var(--Blue-600), var(--Blue-700));
     --border: 1px solid rgb(255 255 255 / 0.25);
 }
 
@@ -27,6 +27,16 @@ body {
     background-image: var(--body-background);
     color: hsl(0 0% 90%);
     min-height: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 60px repeat(5, minmax(300px, 1fr)) auto;
+}
+
+main,
+aside,
+.statistics,
+.statistics ul {
+    display: contents;
 }
 
 ul {
@@ -75,10 +85,6 @@ header {
     z-index: 999;
     position: sticky;
     top: 0;
-}
-
-.header-content {
-    height: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -164,7 +170,6 @@ header p::before {
 .statistics li {
     padding: 20px;
     border-bottom: var(--border);
-    height: 300px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -208,12 +213,6 @@ footer {
             "footer footer footer";
     }
 
-    main,
-    .statistics,
-    .statistics ul {
-        display: contents;
-    }
-
     #header {
         grid-area: header;
     }
@@ -226,7 +225,6 @@ footer {
 
     .statistics li {
         border-left: var(--border);
-        height:auto;
     }
 
     footer {

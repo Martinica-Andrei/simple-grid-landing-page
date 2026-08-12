@@ -14,27 +14,10 @@
 
 <body>
   <header id="header">
-    <div class="header-content">
-      <p>Bridge Collective</p>
-      <button class="toggle-menu" type="button" aria-label="Toggle menu" onclick="toggleMenu(event)">
-        <img src="assets/images/icon-menu.svg" alt="">
-      </button>
-    </div>
-
-    <dialog id="menu">
-      <div class="menu-content">
-        <nav>
-          <ul>
-            <li><a id="about" href="#about">About</a></li>
-            <li><a id="our-work" href="#our-work">Our Work</a></li>
-            <li><a id="partners" href="#partners">Partners</a></li>
-            <li><a id="annual-report" href="#annual-report">Annual Report</a></li>
-            <li><a id="donate" href="#donate">Donate</a></li>
-          </ul>
-        </nav>
-      </div>
-      <div class="background"></div>
-    </dialog>
+    <p>Bridge Collective</p>
+    <button class="toggle-menu" type="button" aria-label="Toggle menu" onclick="toggleMenu(event)">
+      <img src="assets/images/icon-menu.svg" alt="">
+    </button>
   </header>
 
   <main>
@@ -45,7 +28,6 @@
           graduate tomorrow.</p>
       </div>
     </section>
-
 
     <section aria-label="Statistics" class="statistics">
       <ul>
@@ -91,12 +73,30 @@
         </li>
       </ul>
     </section>
-
-    <footer>
-      <p>© 2026 Bridge Collective</p>
-      <p>Registered charity 12345678</p>
-    </footer>
   </main>
+
+  <aside>
+    <dialog id="menu">
+      <div class="menu-content">
+        <nav>
+          <ul>
+            <li><a id="about" href="#about">About</a></li>
+            <li><a id="our-work" href="#our-work">Our Work</a></li>
+            <li><a id="partners" href="#partners">Partners</a></li>
+            <li><a id="annual-report" href="#annual-report">Annual Report</a></li>
+            <li><a id="donate" href="#donate">Donate</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="background"></div>
+    </dialog>
+  </aside>
+
+  <footer>
+    <p>© 2026 Bridge Collective</p>
+    <p>Registered charity 12345678</p>
+  </footer>
+
   <script src="src/index.js"></script>
 </body>
 
