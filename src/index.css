@@ -85,13 +85,42 @@ header p::before {
 
 .hero {
     margin-top: 30px;
-    padding:10px 10px 50px 30px;
+    padding: 10px 10px 50px 30px;
     border-bottom: var(--border);
 }
 
-.hero p{
+.hero p {
     line-height: 1.6;
 }
 
 /* Statistics
 --------------------------------------------------------------------------- */
+
+.statistics li {
+    padding: 20px;
+    border-bottom: var(--border);
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.statistics .top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.statistics .top p {
+    font-weight: bold;
+    font-size: 32px;
+}
+
+.statistics .bottom p:nth-of-type(1){
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+.statistics .bottom p:nth-of-type(2){
+    font-size:15px;
+}
