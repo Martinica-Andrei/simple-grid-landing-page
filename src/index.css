@@ -102,7 +102,7 @@ header p::before {
     border: 0;
     background: var(--body-background);
     width: 100%;
-    position: fixed;
+    position: relative;
 }
 
 .menu-content {
