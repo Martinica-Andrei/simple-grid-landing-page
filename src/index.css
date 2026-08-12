@@ -38,9 +38,7 @@ p {
     font-size: 17px;
 }
 
-nav,
-footer,
-.statistics {
+:is(nav,footer,.statistics) *{
     font-size: 14px;
 }
 
@@ -121,6 +119,9 @@ header p::before {
     font-size: 18px;
 }
 
-.statistics .bottom p:nth-of-type(2){
-    font-size:15px;
+/* Footer
+--------------------------------------------------------------------------- */
+
+footer{
+    padding:20px;
 }
