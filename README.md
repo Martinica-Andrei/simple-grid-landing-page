@@ -26,7 +26,7 @@ Users should be able to:
 
 ### Links
 
-- [Solution URL](https://martinica-andrei.github.io/simple-grid-landing-page/)
+- [Live Site](https://martinica-andrei.github.io/simple-grid-landing-page/)
 
 
 ### Built with
