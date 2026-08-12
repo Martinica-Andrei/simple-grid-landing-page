@@ -78,8 +78,10 @@ header {
 }
 
 .header-content {
+    height: 100%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     border-bottom: var(--border);
     padding: 22px;
     background-image: var(--body-background);
