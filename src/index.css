@@ -259,7 +259,6 @@ footer {
         grid-column: 3 / -1;
         width: auto;
         height: auto;
-        border-left: var(--border);
     }
 
     .menu-content {
