@@ -14,12 +14,13 @@
 
 <body>
   <header id="header">
-    <div class="header-content">
-      <p>Bridge Collective</p>
-      <button class="toggle-menu" type="button" aria-label="Toggle menu" onclick="toggleMenu(event)">
-        <img src="assets/images/icon-menu.svg" alt="">
-      </button>
-    </div>
+    <p>Bridge Collective</p>
+    <button class="toggle-menu" type="button" aria-label="Toggle menu" onclick="toggleMenu(event)">
+      <img src="assets/images/icon-menu.svg" alt="">
+    </button>
+  </header>
+
+  <aside>
     <dialog id="menu">
       <div class="menu-content">
         <nav>
@@ -31,10 +32,10 @@
             <li><a id="donate" href="#donate">Donate</a></li>
           </ul>
         </nav>
-        <div class="background"></div>
       </div>
+      <div class="background"></div>
     </dialog>
-  </header>
+  </aside>
 
   <main>
     <section aria-labelledby="h1" class="hero">
