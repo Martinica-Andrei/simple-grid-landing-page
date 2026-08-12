@@ -1,6 +1,5 @@
 const $ = document.querySelector.bind(document);
 const menu = $("#menu");
-const header = $("#header");
 
 const toggleMenu = (e) => {
     const menuOverflowHidden = "menu-overflow-hidden";
