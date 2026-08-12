@@ -3,13 +3,13 @@ const menu = $("#menu");
 const header = $("#header");
 
 const toggleMenu = (e) => {
-    const overflowHidden = "overflow-hidden";
+    const menuOverflowHidden = "menu-overflow-hidden";
     if (menu.open) {
         menu.close();
-        document.documentElement.classList.remove(overflowHidden);
+        document.documentElement.classList.remove(menuOverflowHidden);
     }
     else {
         menu.show();
-        document.documentElement.classList.add(overflowHidden);
+        document.documentElement.classList.add(menuOverflowHidden);
     }
 }

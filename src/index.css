@@ -69,7 +69,7 @@ button:hover {
     transform: scale(1.1);
 }
 
-.overflow-hidden {
+.menu-overflow-hidden {
     overflow: hidden;
 }
 
@@ -108,7 +108,7 @@ header p::before {
 
 #menu {
     position: fixed;
-    z-index: 999;
+    z-index: 998;
     border: 0;
     top: var(--header-height);
     background: var(--body-background);
@@ -146,7 +146,7 @@ header p::before {
 
 #menu .background {
     position: absolute;
-    z-index: 999;
+    z-index: 998;
     width: 100%;
     height: 100vh;
     background-color: rgb(0 0 0 / 0.25);
@@ -253,23 +253,35 @@ footer {
     }
 
     #menu {
-        position: sticky;
+        position: relative;
+        top:0;
         grid-row: 2 / -1;
         grid-column: 3 / -1;
-        width:auto;
-        height:auto;
+        width: auto;
+        height: auto;
         border-left: var(--border);
     }
 
-    .menu-content{
+    .menu-content {
         max-height: calc(100vh - var(--header-height));
+        overflow: visible;
     }
 
-    .menu-content ul{
+    .menu-content ul {
         align-items: end;
     }
 
     #menu .background {
-        display: none;
+        position: absolute;
+        z-index: 998;
+        width: 100vw;
+        height: 100%;
+        background-color: rgb(0 0 0 / 0.25);
+        right: 100%;
+        top:0;
+    }
+
+    .menu-overflow-hidden {
+        overflow: scroll;
     }
 }
