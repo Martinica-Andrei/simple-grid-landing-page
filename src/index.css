@@ -108,6 +108,7 @@ header p::before {
 
 #menu {
     position: fixed;
+    z-index: 999;
     border: 0;
     top: var(--header-height);
     background: var(--body-background);
@@ -205,7 +206,7 @@ footer {
     body {
         display: grid;
         grid-template-columns: 1.5fr 1fr 1fr;
-        grid-template-rows: 1fr 5fr 5fr 1fr;
+        grid-template-rows: var(--header-height) 5fr 5fr 1fr;
         grid-template-areas:
             "header header header"
             "hero stat1 stat2"
