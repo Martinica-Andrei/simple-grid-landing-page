@@ -44,16 +44,16 @@ ul {
 }
 
 h1 {
-    font-size: 42px;
+    font-size: 2.625rem;
     margin-bottom: 20px;
 }
 
 p {
-    font-size: 17px;
+    font-size: 1.0625rem;
 }
 
 :is(nav, footer, .statistics) * {
-    font-size: 14px;
+    font-size: 0.875rem;
 }
 
 button:hover {
@@ -131,7 +131,7 @@ button:hover {
 .menu-content a {
     color: white;
     text-decoration: none;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 500;
 }
 
@@ -187,13 +187,13 @@ button:hover {
 
 .statistics .top p {
     font-weight: bold;
-    font-size: 32px;
+    font-size: 2rem;
 }
 
 .statistics .bottom p:nth-of-type(1) {
     font-weight: bold;
     margin-bottom: 5px;
-    font-size: 18px;
+    font-size: 1.125rem;
 }
 
 /* Footer
