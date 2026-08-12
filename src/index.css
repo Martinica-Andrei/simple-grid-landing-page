@@ -8,6 +8,7 @@
     --Blue-700: hsl(228, 99%, 58%);
     --body-background: linear-gradient(45deg, var(--Blue-600), var(--Blue-700));
     --border: 1px solid rgb(255 255 255 / 0.25);
+    --header-height: 60px;
 }
 
 *,
@@ -28,7 +29,7 @@ body {
     color: hsl(0 0% 90%);
     min-height: 100%;
     display: grid;
-    grid-template-rows: 60px minmax(300px, 1fr) repeat(4, 300px) auto;
+    grid-template-rows: var(--header-height) minmax(300px, 1fr) repeat(4, 300px) auto;
 }
 
 main,
@@ -106,12 +107,11 @@ header p::before {
 --------------------------------------------------------------------------- */
 
 #menu {
-    position:static;
+    position: fixed;
     border: 0;
+    top: var(--header-height);
     background: var(--body-background);
-    grid-row: 2 / 3;
-    grid-column: 1 / -1;
-    width:100%;
+    width: 100%;
 }
 
 .menu-content {
