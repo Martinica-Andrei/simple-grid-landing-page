@@ -28,8 +28,7 @@ body {
     color: hsl(0 0% 90%);
     min-height: 100%;
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 60px repeat(5, minmax(300px, 1fr)) auto;
+    grid-template-rows: 60px minmax(300px, 1fr) repeat(4, 300px) auto;
 }
 
 main,
@@ -107,11 +106,12 @@ header p::before {
 --------------------------------------------------------------------------- */
 
 #menu {
+    position:static;
     border: 0;
     background: var(--body-background);
-    width: 100%;
-    position: absolute;
-    top: 100%;
+    grid-row: 2 / 3;
+    grid-column: 1 / -1;
+    width:100%;
 }
 
 .menu-content {
