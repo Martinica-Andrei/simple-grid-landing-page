@@ -1,13 +1,52 @@
 /* Global
 --------------------------------------------------------------------------- */
 
-*, ::before, ::after{
+:root {
+    --Blue-200: hsl(224, 100%, 95%);
+    --Blue-400: hsl(220, 100%, 64%);
+    --Blue-600: hsl(228, 100%, 60%);
+    --Blue-700: hsl(228, 99%, 58%);
+}
+
+*,
+::before,
+::after {
     box-sizing: border-box;
-    padding:0;
-    margin:0;
+    padding: 0;
+    margin: 0;
 }
 
+body,html{
+    min-height: 100%;
+}
 
-body{
+body {
     font-family: inter-variable, sans-serif;
+    background-image: linear-gradient(to bottom, var(--Blue-400), var(--Blue-600));
 }
+
+h1 {
+    font-size: 42px;
+}
+
+p {
+    font-size: 17px;
+}
+
+nav,
+footer,
+.statistics {
+    font-size: 14px;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.toggle-menu {
+    background-color: transparent;
+    border: 0;
+}
+
+/* Statistics
+--------------------------------------------------------------------------- */
