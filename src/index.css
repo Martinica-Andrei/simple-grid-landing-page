@@ -161,6 +161,10 @@ header p::before {
     border-bottom: var(--border);
 }
 
+.hero > div{
+    max-width:500px;
+}
+
 .hero p {
     line-height: 1.6;
 }
