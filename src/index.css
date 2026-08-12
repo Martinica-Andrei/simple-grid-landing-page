@@ -6,6 +6,7 @@
     --Blue-400: hsl(220, 100%, 64%);
     --Blue-600: hsl(228, 100%, 60%);
     --Blue-700: hsl(228, 99%, 58%);
+    --body-background: linear-gradient(to bottom, var(--Blue-600), var(--Blue-700));
 }
 
 *,
@@ -16,14 +17,15 @@
     margin: 0;
 }
 
-body,html{
+body,
+html {
     min-height: 100%;
 }
 
 body {
     font-family: inter-variable, sans-serif;
-    background-image: linear-gradient(to bottom, var(--Blue-600), var(--Blue-700));
-    color:white;
+    background-image: var(--body-background);
+    color: white;
 }
 
 h1 {
@@ -47,6 +49,33 @@ button:hover {
 .toggle-menu {
     background-color: transparent;
     border: 0;
+}
+
+.toggle-menu:hover {
+    transform: scale(1.1);
+}
+
+/* Header
+--------------------------------------------------------------------------- */
+
+header {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 22px;
+    border-bottom: 1px solid rgb(255 255 255 / 0.25);
+    background-image: var(--body-background);
+}
+
+header p::before {
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    margin-right: 5px;
+    border-radius: 50%;
 }
 
 /* Statistics
