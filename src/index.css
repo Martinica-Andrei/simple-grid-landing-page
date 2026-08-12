@@ -7,6 +7,7 @@
     --Blue-600: hsl(228, 100%, 60%);
     --Blue-700: hsl(228, 99%, 58%);
     --body-background: linear-gradient(to bottom, var(--Blue-600), var(--Blue-700));
+    --border: 1px solid rgb(255 255 255 / 0.25);
 }
 
 *,
@@ -25,11 +26,12 @@ html {
 body {
     font-family: inter-variable, sans-serif;
     background-image: var(--body-background);
-    color: white;
+    color: hsl(0 0% 90%);
 }
 
 h1 {
     font-size: 42px;
+    margin-bottom: 20px;
 }
 
 p {
@@ -64,7 +66,7 @@ header {
     display: flex;
     justify-content: space-between;
     padding: 22px;
-    border-bottom: 1px solid rgb(255 255 255 / 0.25);
+    border-bottom: var(--border);
     background-image: var(--body-background);
 }
 
@@ -76,6 +78,19 @@ header p::before {
     background-color: white;
     margin-right: 5px;
     border-radius: 50%;
+}
+
+/* Hero
+--------------------------------------------------------------------------- */
+
+.hero {
+    margin-top: 30px;
+    padding:10px 10px 50px 30px;
+    border-bottom: var(--border);
+}
+
+.hero p{
+    line-height: 1.6;
 }
 
 /* Statistics
